@@ -1,0 +1,35 @@
+:root{
+    --header-height:15rem; /* Manutenção Prática*/
+    --main-color: rgba(0, 255, 0,.3);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+    background-color: var(--main-color);
+    height: var(--header-height);
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+main {
+    min-height: calc(100vh - var(--header-height) - 2rem); /* Funçao no CSS*/
+    background-color: rgba(238, 255, 1, 0.4);
+    font-size: 2rem;
+    margin-top: var(--header-height);
+}
+
+p {
+    margin: calc(var(--header-height) * 2)
+}
+
+footer {
+    height: 10rem;
+    font-size: 2rem;
+    background-color: rgba(255, 0, 0, .4);
+}

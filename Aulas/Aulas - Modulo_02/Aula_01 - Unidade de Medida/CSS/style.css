@@ -1,0 +1,74 @@
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 3.4em;
+    padding-bottom: 550px;
+}
+
+b {
+    color: red;
+    font-size: 1em; /* 30 px*/
+    font-size: 3rem; /* 30 px*/
+    font-size: 50%; /* 30 px*/
+}
+
+p {
+    font-size: 3em; /* 1em vale 10px,  3em vale 30px*/
+    width: 10em; /* 10px */
+    background-color: #ccc;
+}
+
+.porcentagem {
+    width: 60%;
+    height: 500px;
+    background-color: yellow;
+}
+
+.porcentagem p {
+    background-color: orange;
+    padding-top: 50%;
+    width: 50%;
+    font-size: 3rem;
+}
+
+.padding-em {
+    background-color: red;
+    
+}
+
+.padding-em p{
+    background-color: transparent;
+    margin: 0;
+    padding: 1em; /* 10px */
+    font-size: 30px;
+}
+
+.viewport-container {
+    font-size: 3rem;
+    height: auto;
+}
+
+.viewport {
+    width: 90vw;
+    height: 90vh;
+    background-color: rgba(0,0,255,0.5);
+}
+
+.em {
+    width: 20em;
+    padding: 1em;
+    margin: 1em;
+    background-color: orange;
+    font-size: 1.6em;
+}
+
+.ch {
+    width: 20ch;
+    width: 180px;
+    padding: 1em;
+    margin: 1em;
+    background-color: orange;
+    font-size: 1.6em;
+}

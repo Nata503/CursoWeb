@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Secular+One&family=Viaoda+Libre&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.hero {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    padding: 5px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #162028;
+}
+
+.hero-content h1 {
+    color: white;
+    margin: 0px 0px 0px 200px;
+    font-family: 'Viaoda Libre';
+    font-weight: lighter;
+}
+
+.hero-content ul {
+    display: flex;
+    gap: 50px;
+    font-family: 'Viaoda Libre';
+}
+
+.hero-content li {
+    color: #425564;
+    list-style-type: none;
+    margin: 0px 100px 0px 0px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.menu li:hover{
+    color: white;
+    cursor: pointer;
+}
+.img-topo {
+    background-image: url(../Image/top4.jpg);
+    height: 899px;
+    width: 1861px;
+    margin: 0;
+}
+
+.section-content1{
+    margin: 20px auto;
+    width: 860px;
+    height: 250px;
+    padding: 10px;
+}
+
+.section-content1 h1 {
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Viaoda Libre';
+}
+
+.section-content1 p {
+    font-size: 17px;
+    font-weight: lighter;
+    text-align: justify;
+    text-indent: 50px;
+    color: #555;
+}
+
+.card-main {
+    margin: 25px auto;
+    display: flex;
+    gap: 15px;
+    width: 860px;
+    height: 250px;
+}
+
+.card-main h2 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #555;
+}
+.card-main p {
+    text-align: center;
+    color: #555;
+}
+
+.img-baixo {
+    background-image: url(../Image/bg_detalhe.png);
+    height: 200px;
+    width: 200px;
+}
+
+.section-content2 {
+    margin: 200px auto 0px 0px;
+    width: 1841px;
+    height: 600px;
+    padding: 10px;
+    background-image: url(../Image/bg_detalhe.png);
+    background-size: cover;
+    background-position: auto;
+    color: white;
+}
+
+.section-content2 h2 {
+    font-family: 'Viaoda Libre';
+    font-size: 62px;
+    align-items: center;
+    margin: 100px 0px 30px 390px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.section-content2 p {
+    font-size: 20px;
+    width: 35%;
+    margin: 0px 0px 100px 390px;
+}
+
+footer {
+    text-align: center;
+    background-color: #0b171f;
+    color: #6f8597;
+    padding: 20px;
+    margin: auto;
+    font-size: 18px;
+}

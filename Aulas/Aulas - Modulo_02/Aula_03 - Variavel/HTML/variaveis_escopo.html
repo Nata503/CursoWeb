@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis Escopo</title>
+    <style>
+
+        :root {
+            --color: red;
+            font-size: 200%;
+        }
+
+        .container {
+            --color: orange;
+        }
+
+        p {
+            color: var(--color);
+        }
+
+        .div1 {
+            --color: green;
+        }
+
+        .div2 {
+            --color: rgb(255, 0, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="div2">
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+        <p>Teste</p>
+    </div>
+    <p>Teste</p>
+</body>
+</html>

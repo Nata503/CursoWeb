@@ -1,0 +1,49 @@
+body{
+    border-radius: 50%;
+    padding: 0px;
+    border: none;
+}
+
+
+p{
+    background-color: #ccc;
+    margin-top: 0;
+}
+
+h2{
+    background-color: #39e20f;
+    width: 50%;
+    height: 150px;
+}
+
+h1{
+    background-color: #a07c7c;
+    padding: 16px;
+}
+
+.destaque{
+    background-color: orange;
+    width: 50%;
+    height: 100px;
+}
+
+.padding{
+    padding: 26px;
+}
+
+.margin{
+    margin: 50px 0 20px 100px; 
+}
+
+.border{
+        Border: 10px solid red;
+        Border-top:dotted;
+        Border-right:dashed;
+        Border-bottom:groove;
+        Border-left:10px;
+        Border-top-style:10px;
+        Border-top-width:10px;
+        Border-top-color:10px;
+        Padding: 10px;
+ 
+}

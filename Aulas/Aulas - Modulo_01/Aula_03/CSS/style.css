@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(153,166,203);
+}
+
+p{
+    color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#meu-id{
+    background-color: aqua;
+}
+
+.fonts{
+    color: red;
+    font-size: 15px;
+    font-variant: small-caps;
+}
+
+.text{
+    color:yellow;
+    font-size: 15px;
+    font-variant: small-caps;
+}
+
+.cores{
+    color: green;
+    font-size: 15px;
+    font-variant: small-caps;
+    text-decoration:underline;
+}
+
+.titulo{
+    color: #0ff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: left;
+    text-indent: 28px;
+    font-weight: bold;
+}
+
+.titulo1{
+    color: orange;
+}
+
+.titulo2{
+    color: orange;
+}
+
+.titulo3{
+    color: orange;
+
+}
+

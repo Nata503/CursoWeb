@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+
+.menu{
+    background-image: url(../bg-3.webp);
+    height: 420px;
+    background-size: cover;
+    background-position: left center;
+}
+
+.menu ul{
+    margin: 0px 20px 0px 0px;
+    text-align: right;
+    padding: 5px;
+}
+
+.menu li{
+    background-color: rgba(46, 46, 46, 0.774);
+    list-style: none;
+    display: inline-block;
+    padding: 16px;
+    font-size: 16px;
+    margin:9px 10px 0px 3px;
+    text-transform: uppercase;
+    border: 2px solid white;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-content{
+    font-size: 22px;
+    text-align: center;
+}
+.menu-content h1{
+    text-transform: uppercase;
+    font-size: 56px;
+    margin: 110px 0px 20px 100px;
+    color: white;
+    text-shadow: 3px 3px 2px black;
+    width: 80%;
+}
+
+.menu-content p{
+    color: white;
+    margin: 10px 210px 0px 0px;
+    font-size: 22px;
+    background-color: rgba(34, 34, 34, 0.774);
+    padding: 14px;
+    display: inline-block;
+    border-bottom: 2px solid white;
+}
+
+.conteiner{
+    background-color: white;
+    display: inline-block;
+    padding: 16px;
+    align-items: center;
+    margin: 20px 100px 0px 100px;
+}
+
+.conteiner1{
+    background-color: white;
+    display: inline-block;
+    padding: 16px;
+    align-items: center;
+    margin: 20px 100px 0px 100px;
+}
+
+.conteiner2{
+    background-color: white;
+    display: inline-block;
+    padding: 16px;
+    align-items: center;
+    margin: 20px 100px 14px 100px;
+}
+
+.padrao h1{
+    background-color: #dfdfdf;
+    padding: 10px;
+    border-bottom: 2px solid #9b9b9b;
+}
+
+.padrao p{
+    padding: 7px;
+}
+
+.padrao a{
+    background-color: #ccc;
+    display: inline-block;
+    padding: 12px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu li:hover{
+    cursor: pointer;
+    background-color: rgba(15, 15, 15, 0.774);
+}
+
+.padrao a:hover{
+    cursor: pointer;
+    background-color: rgba(73, 73, 73, 0.774);
+    color: white;
+}
+
+footer{
+    background-color: rgba(73, 73, 73, 0.774);
+    text-align: center;
+    padding: 27px;
+    align-items: bottom;
+    margin: 0px 0px 0px 0px;
+    color: white;
+    text-shadow: 3px 2px 2px black;
+}

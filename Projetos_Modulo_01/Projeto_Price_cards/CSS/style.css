@@ -1,0 +1,140 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #13171a;
+}
+
+.menu {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0px 0px 0px 350px;
+    background-color: black;
+    height: 100px;
+    width: 60%;
+}
+
+.menu-content {
+    display: flex;
+    gap: 10px;
+}
+
+.menu h1 {
+    font-family: 'Montserrat ExtraBold';
+    font-size: 38px;
+    text-transform: uppercase;
+    margin: 0px 450px 0px 0px;
+    text-align: center;
+}
+
+.menu-content li {
+    list-style: none;
+    padding: 15px;
+    border-radius: 15%;
+}
+
+.menu-content li:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.conteudo h1{
+    font-family: 'Montserrat ExtraBold';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 65px;
+    margin: 30px 0px 0px 0px;
+}
+
+.conteudo {
+    color: white;
+    margin: 100px 0px 0px 0px;
+    flex-direction: center;
+}
+
+.planos {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.conteudo-content {
+    padding: 30px;
+    border: 2px solid #13171a;
+    box-shadow: 2px 2px 2px black;
+    width: 250px;
+    height: 320px;
+    background-color: #23242b;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+}
+
+.conteudo-content h2 {
+    margin: -5px;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-bottom: 1px solid yellow;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.conteudo-content p {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.conteudo-content p span {
+    font-size:15px;
+}
+
+.list {
+    padding: 0px 20px 0px 20px;
+    color: #ccc;
+}
+
+.list li {
+    margin: 0px 0px 0px 0px;
+}
+
+.list li::marker {
+    color: yellow;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+.link a {
+    background-color: #d4f622; /* cor de fundo amarela neon */
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 15px 40px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.link a:hover {
+    background-color: #b8da1f; /* cor mais escura ao passar o mouse */
+    cursor: pointer;
+}

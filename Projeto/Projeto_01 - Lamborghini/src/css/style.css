@@ -1,0 +1,166 @@
+body{
+     background-color: black; /*Aqui colocamos o Fundo da página*/
+     overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites da janela (sem scroll) */
+}
+
+main::after {
+    content: '';                     /* Cria um pseudo-elemento vazio */
+    position: fixed;                 /* Fixa o elemento na tela, mesmo com rolagem */
+
+    top: 0;
+    left: 0%;
+    
+    min-height: 15vh;               /* Altura mínima igual à altura da tela inteira */
+    width: 300vh;                     /* Largura proporcional à altura da tela */
+    background: linear-gradient(92deg, #000 25%, rgba(0, 0, 0, 0) 75%) no-repeat;
+    /* Um degradê preto que vai se tornando transparente */
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+main .carro{
+    display: none; /* Oculta todos os personagens por padrão */
+    height: 100vh; /* Ocupa a altura total da janela */
+}
+
+main .carro.selecionado{
+    display: block; /* Exibe o personagem que tiver a classe 'selecionado' */
+}
+
+main .carro .imagem {
+    width: 100%;                     /* A imagem ocupa 100% da largura do container */
+    height: 100%;                    /* E 100% da altura */
+    object-fit: cover;              /* Corta a imagem para cobrir o espaço mantendo a proporção */
+}
+
+.conteudo {
+    position: absolute;             /* Posiciona em relação ao elemento pai */
+    top: 30px;
+    left: 50px;
+    object-position: center;
+
+    display:flex;                 /* Organiza os elementos filhos em linha ou coluna */
+    flex-direction: row;       /* Organiza os elementos em coluna */
+    justify-content: flex-start;      /* Centraliza verticalmente */
+    height: 80vh;                /* Altura total da tela */
+    max-width: 100%;             /* Largura máxima */
+    z-index: 1;                   /* Garante que o conteúdo fique acima de outros elementos */
+    gap: 120px;
+    text-align: center;
+}
+
+.conteudo .nome-carro {
+    color: #ffffff;                /* Cor do texto branca */
+    font-size: 60px;               /* Tamanho da fonte */
+    font-family: "Secular One";   /* Fonte usada */
+    font-weight: 100px;             /* Peso da fonte (normal) */
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 25px;         /* Espaço abaixo do nome */
+}
+
+.conteudo .descricao1 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 24px;      /* Altura entre linhas para melholeitura */ /* move o botão 20px pra baixo */
+    text-align: center;
+}
+
+.conteudo .descricao2 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 24px;            /* Altura entre linhas para melhor leitura */
+    bottom: 250%;
+    text-align: center; 
+}
+
+.conteudo .descricao3 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 24px;            /* Altura entre linhas para melhor leitura */
+    text-align: center; 
+}
+
+.conteudo .descricao4 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 24px;            /* Altura entre linhas para melhor leitura */
+    text-align: center; 
+}
+
+.conteudo .descricao5 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 24px;            /* Altura entre linhas para melhor leitura */
+    text-align: center; 
+}
+
+.botoes {
+    background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0,0,0,0.3);  /* Fundo preto com transparência */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+
+    display: flex;
+    flex-direction: row;       /* Botões em coluna */
+    align-items:center;          /* Centraliza horizontalmente */
+    justify-content: center;      /* Centraliza verticalmente */
+
+    gap: 100px;   
+    z-index: 2; 
+
+}
+
+.botoes .botao {
+    border: none;
+    background-color: black;
+    height: 90px;
+    cursor: pointer;                 /* Cursor muda para mãozinha */
+    transition: transform 0.6s ease;/* Animação suave no hover */
+    border-radius: 50%;             /* Botão circular */
+}
+
+.botoes .botao img {
+    border-radius: 50%;             /* Deixa a imagem do botão circular */
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.2);         /* Aumenta o botão */
+    box-shadow: 0 0 10px #D9D9D9;  /* Adiciona um brilho ao redor */
+}
+
+.botoes .botao.miura.selecionado {
+    box-shadow: 0 0 10px #FFF047;  /* Brilho turquesa */
+}
+
+.botoes .botao.countach.selecionado {
+    box-shadow: 0 0 10px #090979;  /* Brilho roxo */
+}
+
+.botoes .botao.diablo.selecionado {
+    box-shadow: 0 0 10px #D11717;  /* Brilho laranja */
+}
+
+.botoes .botao.murcielago.selecionado {
+    box-shadow: 0 0 10px #C4BF25;  /* Brilho rosa */
+}
+
+.botoes .botao.gallardo.selecionado {
+    box-shadow: 0 0 10px #FF5454;  /* Brilho amarelo */
+}
+

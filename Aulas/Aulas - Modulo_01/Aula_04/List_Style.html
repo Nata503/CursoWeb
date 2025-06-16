@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de Lista</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        ol li /* Quando nao usamos a virgula, estamos falando sobre o descendente, nesse exemplo estamos personalizando o Li que é descedente da Ol*/
+        {
+            list-style-type: upper-roman; /*Numero Romano*/
+            list-style-position: outside;
+        }
+
+        .numero_latin{
+            list-style-type: lower-latin; /*Circulo sem preenchimento*/
+            list-style-position: inside;
+        }
+
+        .numero_alpha{
+            list-style-type: upper-alpha;
+            list-style-position: inside;
+        }
+
+        .lista_redonda{
+            list-style-type: disc;
+        }
+
+        .lista_preenchimento{
+            list-style-type: circle;
+            list-style-position: inside;
+        }
+
+        .lista_quadrado{
+            list-style-type: square;
+        }
+
+        .lista_ordenado{
+            list-style-type: decimal;
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista Numeros Latin</h1>
+<ul class="numero_latin">
+    <li>Item 01</li>
+    <li>Item 02</li>
+    <li>Item 03</li>
+</ul>
+   
+    <h2>Lista Numeros Romanos</h2>
+<ol>
+    <li>item 01</li>
+    <li>item 02</li>
+    <li>item 03</li>
+</ol>
+    <h1>Lista Numeros Alpha</h1>
+<ul class="numero_alpha">
+    <li>item 01</li>
+    <li>item 02</li>
+    <li>item 03</li>
+</ul>
+    <h2>Lista redonda</h2>
+<ul class="lista_redonda">
+    <li>item 01</li>
+    <li>item 02</li>
+    <li>item 03</li>
+</ul>
+    <h1>Lista Circulo sem preenchimento</h1>
+<ul class="lista_preenchimento">
+    <li>item 01</li>
+    <li>item 02</li>
+    <li>item 03</li>
+</ul>
+    <h2>Lista Quadrado</h2>
+<ul class="lista_quadrado">
+    <li>item 01</li>
+    <li>item 02</li>
+    <li>item 03</li>
+</ul>
+    <h1>Lista Numero Ordenado</h1>
+<ul class="lista_ordenado">
+    <li>item 01</li>
+    <li>item 02</li>
+    <li>item 03</li>
+</ul>
+</body> 
+</html>

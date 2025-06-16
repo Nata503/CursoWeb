@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        body{
+            margin-bottom: 500px;
+        }
+        .container {
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+            height: 300px;
+            background-color: rgba(255, 0, 0, .5);
+        }
+
+        .item {
+            background-color: blueviolet;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .fit-content .item{
+            width: fit-content;
+        }
+
+        .min-content .item{
+            width:min-content;
+        }
+
+        .max-content .item{
+            width: max-content;
+        }
+        
+        .overflow-hidden{
+            overflow: hidden;
+        }
+        .overflow-scroll{
+            overflow: scroll;
+        } 
+
+        .overflow-auto{
+            overflow:auto;
+        } 
+
+        .overflow-x-hidden{
+            overflow-x: hidden;
+        }
+
+        .overflow-x-scroll{
+            overflow-x: scroll;
+        } 
+
+        .overflow-y-hidden{
+            overflow-y: hidden;
+        } 
+
+        .overflow-y-scroll{
+            overflow-y: scroll;
+        } 
+        
+        .overflow-visible{
+            overflow: visible;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container fit-content overflow-auto">
+        <div class="item">Lorem</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, exercitationem!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, cupiditate enim rerum accusamus explicabo quia, rem odit necessitatibus quasi error, ducimus fugit? Deleniti, iusto eveniet.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo impedit vitae fugit soluta quod ratione beatae perspiciatis nobis. Laudantium quas veniam ab, quis pariatur ex? Ex, repudiandae provident. Eveniet expedita quod id, illum suscipit eaque velit quasi officiis voluptate sapiente molestias sint, nulla, officia ipsa veniam aliquam. Molestiae magnam obcaecati sequi, provident tenetur explicabo ut dicta voluptas, minus corrupti error corporis vel, possimus laboriosam unde? Sapiente odio illo commodi earum nobis! Nemo facere totam magnam?</div>
+    </div>
+
+    <div class="container min-content overflow-auto">
+        <div class="item">Lorem</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, exercitationem!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, cupiditate enim rerum accusamus explicabo quia, rem odit necessitatibus quasi error, ducimus fugit? Deleniti, iusto eveniet.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo impedit vitae fugit soluta quod ratione beatae perspiciatis nobis. Laudantium quas veniam ab, quis pariatur ex? Ex, repudiandae provident. Eveniet expedita quod id, illum suscipit eaque velit quasi officiis voluptate sapiente molestias sint, nulla, officia ipsa veniam aliquam. Molestiae magnam obcaecati sequi, provident tenetur explicabo ut dicta voluptas, minus corrupti error corporis vel, possimus laboriosam unde? Sapiente odio illo commodi earum nobis! Nemo facere totam magnam?</div>
+    </div>
+
+    <div class="container max-content overflow-auto">
+        <div class="item">Lorem</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, exercitationem!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, cupiditate enim rerum accusamus explicabo quia, rem odit necessitatibus quasi error, ducimus fugit? Deleniti, iusto eveniet.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo impedit vitae fugit soluta quod ratione beatae perspiciatis nobis. Laudantium quas veniam ab, quis pariatur ex? Ex, repudiandae provident. Eveniet expedita quod id, illum suscipit eaque velit quasi officiis voluptate sapiente molestias sint, nulla, officia ipsa veniam aliquam. Molestiae magnam obcaecati sequi, provident tenetur explicabo ut dicta voluptas, minus corrupti error corporis vel, possimus laboriosam unde? Sapiente odio illo commodi earum nobis! Nemo facere totam magnam?</div>
+    </div>
+</body>
+</html>

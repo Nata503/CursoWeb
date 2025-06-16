@@ -1,0 +1,38 @@
+body{
+    margin: auto;
+    width: 600px;
+}
+
+.nav-section {
+    margin: auto;
+    border: 2px solid gray;
+    padding: 20px;
+}
+
+.nav-container {
+    display: flex;
+}
+
+:popover-open{
+    inset:unset;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#popover1:popover-open::backdrop{
+    background-color: #8f8e8e8a;
+}
+
+.btn-ajuda {
+    width: 55px;
+    height: 30px;
+    margin: 20px 0px 0px 200px;
+    background-color: #0d7bea;
+    color: white;
+    border: 2px solid #0d7bea;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

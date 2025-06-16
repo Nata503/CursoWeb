@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+
+.menu{
+    background-image: url(../imagens/bg-2.jpg);
+    height: 420px;
+    background-size: cover;
+    background-position: left center;
+    padding: 1px;
+}
+
+.menu-content h1{
+    font-size: 30px;
+    margin: 110px 0px 0px 90px;
+    color: white;
+    text-shadow: 3px 2px 2px black;
+    width: 80%;
+}
+
+.menu-content p{
+    color: #ccc;
+    margin: 20px 0px 0px 75px;
+    font-size: 18px;
+    background-color: rgba(87, 87, 87, 0.774);
+    padding: 5px;
+    display: flex;
+    width: 80%;
+    border-radius: 15px;
+}
+
+.menu ul{
+    margin: 20px 170px 0px 0px;
+    text-align: right;
+    padding: 5px;
+}
+
+.menu-content li.rede{
+    color: red;
+}
+.menu li .rede{
+    color: red;
+}
+.menu li .rede{
+    color: red;
+}
+.menu li .rede{
+    color: red;
+}
+
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-content{
+    font-size: 22px;
+    text-align: center;
+}
+
+.conteiner{
+    background-color: white;
+    display: inline-block;
+    padding: 16px;
+    align-items: center;
+    margin: 20px 100px 0px 100px;
+}
+
+.conteiner1{
+    background-color: white;
+    display: inline-block;
+    padding: 16px;
+    align-items: center;
+    margin: 20px 100px 0px 100px;
+}
+
+.conteiner2{
+    background-color: white;
+    display: inline-block;
+    padding: 16px;
+    align-items: center;
+    margin: 20px 100px 14px 100px;
+}
+
+.padrao h1{
+    background-color: #dfdfdf;
+    padding: 10px;
+    border-bottom: 2px solid #9b9b9b;
+}
+
+.padrao p{
+    padding: 7px;
+}
+
+.padrao a{
+    background-color: #ccc;
+    display: inline-block;
+    padding: 12px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu li:hover{
+    cursor: pointer;
+    background-color: rgba(15, 15, 15, 0.774);
+}
+
+.padrao a:hover{
+    cursor: pointer;
+    background-color: rgba(73, 73, 73, 0.774);
+    color: white;
+}
+
+footer{
+    background-color: rgba(73, 73, 73, 0.774);
+    text-align: center;
+    padding: 27px;
+    align-items: bottom;
+    margin: 0px 0px 0px 0px;
+    color: white;
+    text-shadow: 3px 2px 2px black;
+}
