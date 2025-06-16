@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Accent Color</title>
+    <style>
+        input, 
+        progress {
+            accent-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Accent-color</h1>
+    <h2>Range</h2>
+    <label for="volume">Volume</label>
+    <input type="range" name="volume" min="0" max="11">
+
+    <h1>Progress</h1>
+    
+    <label>Porcentagem da tarefa <br>
+        <progress max="100" value="70"> 70% </progress>
+        <progress></progress>
+    </label>
+
+    <h2>Checkbox</h2>
+
+    <label>
+        <input type="checkbox" name="interesse" value="html">HTML
+    </label>
+
+    <label>
+        <input type="checkbox" name="interesse" value="css">CSS
+    </label>
+
+    <h2>Radio</h2>
+
+    Possui atividade extra?
+    <label>
+        <input type="radio" name="atvExtra" value="s">
+        Sim
+    </label>
+
+    <label>
+        <input type="radio" name="atvExtra" value="n">
+        Não
+    </label>
+</body>
+</html>
