@@ -9,21 +9,22 @@
 <body>
     <section>
         <div class="login">
-            <h1>Login</h1>
             <form action="">
-                <legend>Login</legend>
                 <fieldset>
-                    <p>
-                        <label for="">Usuario:</label>
-                        <input type="text">
-                    </p>
-                    <p>
-                        <label for="">Senha:</label>
-                        <input type="password">
-                    </p>
-                    <input type="button" value="Login" class="btn-Login">
-                    <input type="button" value="Cadastre-se">
-                    <a href="#">Incresva-se</a>
+                    <legend>Login</legend>
+                    <div class="grupo-nome">
+                        <input class="dados" type="text" name="nomeUsual" id="nomeUsual" required>
+                        <label for="nomeUsual">Usuário</label>
+                    </div>
+                    <div class="grupo-nome">
+                        <input class="dados" type="password" name="senhaUsual" id="senhaUsual" required>
+                        <label for="senhaUsual">Senha</label>
+                    </div>
+                    <div class="botoes">
+                        <input type="submit" value="Login" class="btn-login">
+                        <input type="submit" value="Cadastre-se" class="btn-cadastro">
+                    <a href="#" class="btn-inscreva">Esqueci minha senha</a>
+                    </div>
                 </fieldset>
             </form>
         </div>
