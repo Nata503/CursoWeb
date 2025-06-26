@@ -21,6 +21,7 @@ form{
 fieldset {
     border: none;
     padding: 20px;
+    text-align: center;
 }
 
 legend {
@@ -44,24 +45,6 @@ legend {
 .grupo-nome {
     position: relative;
     padding: 10px 0;
-}
-
-.botoes {
-    padding: 10px;
-    width: 386px;
-    margin: 0px 0px 0px -9px;
-}
-
-.btn-login {
-    color: white;
-    background-color: #3c6bb3;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 7px;
-    margin: 10px 0px 0px -10px;
-    display: inline;
-    width: 50px;
-    text-decoration: none;
 }
 
 .btn-login:hover {
@@ -102,4 +85,38 @@ input:valid~label {
 
 .btn-cadastro:hover {
     background-color: #ccc;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column; /* um embaixo do outro */
+    gap: 10px; /* espaço entre os itens */
+    margin-top: 10px;
+}
+
+.btn-login {
+    color: white;
+    background-color: #3c6bb3;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 90px;
+    margin: auto;
+}
+
+.btn-voltar-login {
+    background-color: #ccc;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 110px;
+    margin: auto;
+}
+
+.btn-voltar-login:hover {
+    background-color: #aaa;
 }

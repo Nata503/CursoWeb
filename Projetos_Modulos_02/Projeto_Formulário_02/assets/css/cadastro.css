@@ -4,29 +4,28 @@ body {
     background-color: #3c6bb3;
 }
 
-div.login {
-    width: 500px;
-    margin: 250px auto;
-    background-color: white;
+fieldset {
+    border: none;
 }
 
-form{
-    padding: 35px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+div.login {
+    width: 500px;
+    background-color: white;
+    margin: 250px auto;
     box-shadow: 2px 2px 2px black;
 }
 
-fieldset {
-    border: none;
-    padding: 20px;
+form {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza tudo horizontalmente */
 }
 
 legend {
     font-size: 2em;
     color: #3c6bb3;
-    margin: -13px;
+    margin-left: -13px;
 }
 
 .dados {
@@ -46,21 +45,15 @@ legend {
     padding: 10px 0;
 }
 
-.botoes {
-    padding: 10px;
-    width: 386px;
-    margin: 0px 0px 0px -9px;
-}
-
 .btn-login {
     color: white;
     background-color: #3c6bb3;
     padding: 10px 15px;
     border: none;
     border-radius: 7px;
-    margin: 10px 0px 0px -10px;
-    display: inline;
-    width: 50px;
+    margin: 10px 0px 0px -9px;
+    display: flex;
+    width: 80px;
     text-decoration: none;
 }
 
@@ -69,13 +62,17 @@ legend {
     cursor: pointer;
 }
 
+fieldset p {
+    margin: -27px 0px 0px 190px;
+}
+
 label {
     color: #3c6bb3;
     padding: 0 5px;
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    left: 0.2em;
+    left: 0.1em;
     pointer-events: none;
     transition: top .3s, font-size 0.3s, background-color 0.3s;
 }
@@ -89,17 +86,4 @@ input:valid~label {
     top: 10px;
     background-color: white;
     font-size: 0.7rem;
-}
-
-.btn-cadastro {
-    margin: 0px 40px 0px 0px;
-    text-decoration: none;
-    color: #0056b3;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    border-radius: 7px;
-}
-
-.btn-cadastro:hover {
-    background-color: #ccc;
 }
