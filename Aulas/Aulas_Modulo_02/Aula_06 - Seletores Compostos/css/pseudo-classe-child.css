@@ -1,0 +1,40 @@
+p:first-child{
+    color: red;
+}
+
+p:last-child{
+    color: green;
+}
+
+p:nth-child(2){
+    color: orange;
+}
+
+p:first-of-type{
+    background-color: rgba(242, 255, 57, 0.3);
+}
+
+p:last-of-type{
+    background-color: rgba(65, 255, 214, 0.3);
+}
+
+p:nth-of-type(2){
+    background-color: rgba(93, 109, 255, 0.3);
+}
+
+li:nth-child(odd){
+    color: rgba(121, 5, 253, 0.767);
+}
+
+li:nth-child(even){
+    color: rgb(250, 1, 125);
+}
+
+li:nth-child(2n){
+    background-color: rgba(242, 255, 57, 0.3);
+}
+
+li:nth-child(3n){
+    text-decoration: underline;
+    cursor: pointer;
+}
