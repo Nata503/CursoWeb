@@ -1,0 +1,8 @@
+p a {
+    color: red;
+    background-color: yellow;
+}
+
+p:has(.teste){
+    background-color: #ccc;
+}

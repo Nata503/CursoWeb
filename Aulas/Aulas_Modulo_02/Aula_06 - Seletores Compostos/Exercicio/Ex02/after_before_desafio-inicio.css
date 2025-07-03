@@ -27,3 +27,8 @@ input[type="checkbox"]:disabled + label{
 li li:nth-of-type(3){
     background-color: yellow;
 }
+
+li li::selection {
+    color: rgb(255, 40, 2);
+    background-color: yellow;
+}

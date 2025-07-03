@@ -1,0 +1,59 @@
+button {
+    background-color: #474747;
+    color: white;
+    border: none;
+    padding: 1em;
+    margin-bottom: .5em;
+}
+
+button:disabled {
+    opacity: .5;
+}
+
+p:empty::before {
+    content: "Parágrafo vazio?"
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+a:focus {
+    background-color: orange;
+}
+
+input[type="text"]:read-write{
+    background-color: #999;
+    border: 1px solid rgb(10, 10, 10);
+    padding: .5em;
+}
+
+input[type="text"]:read-only:not(:disabled){
+    background-color: rgba(32, 28, 235, 0.555);
+    border: none;
+}
+
+input[type="text"]:disabled {
+    border: 1px solid 
+    black;
+}
+
+input[type="text"]::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+input[type="text"]:placeholder-shown{
+    background-color: aqua;
+}
+
+p:only-child{
+    background-color: rgb(247, 147, 247);
+}
+
+p:read-write{
+    border-bottom: 2px solid red;
+}
+
+div:target {
+    border: 4px dashed red;
+}

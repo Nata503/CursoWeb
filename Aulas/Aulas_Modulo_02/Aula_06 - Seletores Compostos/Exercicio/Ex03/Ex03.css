@@ -1,0 +1,31 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: .5em;
+}
+
+th {
+    background-color: #3d48eebb;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #d1d1d1;
+}
+
+tr:nth-child(odd) {
+    background-color: #999999;
+}
+
+tr:has(td:first-child input[type="checkbox"]:checked){
+    background-color: rgb(47, 197, 47);
+}
+
+tr:has(td:first-child input[type="checkbox"]){
+    background-color: rgb(247, 62, 38);
+}
