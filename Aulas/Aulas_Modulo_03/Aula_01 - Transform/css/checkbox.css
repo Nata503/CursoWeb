@@ -3,7 +3,7 @@
 }
 
 .chk1 + label span{
-        display: inline-block;
+    display: inline-block;
     font-size: 20px;
     width: 1em;
     height: 1em;
@@ -29,6 +29,113 @@
     transform: rotate(30deg);
 }
 
-.lbl2 input[type="checkbox"]:checked + label{
+.lbl2 span{
+    display: inline-block;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
     background-color: red;
+    position: relative;
 }
+
+.lbl2 input[type="checkbox"]:checked + span{
+    background-color: blue;
+    transition: background-color .2s;
+}
+
+.lbl2 input[type="checkbox"] + span::before {
+    content: "";
+    display: block;
+    border:   .087em solid white;
+    position: absolute;
+    top: 0.15em;
+    left: 0.38em;
+    right: 0.3em;
+    bottom: 0.3em;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    transform: rotate(30deg);
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.lbl2 input[type="checkbox"]:checked + span::before{
+    opacity: 1;
+}
+
+.lbl2 input[type="checkbox"]{
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    outline: none;
+}
+
+.lbl2 input[type="checkbox"]:focus + span{
+    outline: 2px solid black;
+    box-sizing: border-box;
+}
+
+.switch span {
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    border-radius: 1em;
+    outline: 2px solid #000000;
+    overflow: hidden;
+    position: relative;
+}
+
+.switch span::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 15px;
+    background-color: #8b8b8b;
+    transform: translateX(0);
+    transition: transform .2s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.switch input:checked + span::after{
+    transform: translateX(100%);
+    background-color: white;
+}
+
+.switch span::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #777777;
+    transform: translateX(-100%);
+    transition: transform .2s ease-in-out;
+    z-index: 0;
+    position: absolute;
+}
+
+.switch input:checked + span::before{
+    transform: translateX(0);
+}
+
+.switch input[type="checkbox"]{
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    outline: none;
+}
+
+.switch input:focus + span {
+    outline: solid black;
+    outline-offset: 2px;
+}
+
+
